@@ -7,7 +7,6 @@ const word = process.env.WORD;
 /// constant
 const web3 = new Web3(process.env.SEPOLIA_ENDPOINT);
 const PRIVKEY = process.env.KEY;
-const SENDER = web3.eth.accounts.privateKeyToAccount(PRIVKEY);
 const LIMERICK_ABI = [
   {
     inputs: [
@@ -749,12 +748,16 @@ function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
+function warpContent(content) {
+  return content.split(":\n")[1];
+}
+
 async function requestLimerick(_prompt) {
   const idOfWord = await LIMERICK.methods.idOfWord(_prompt).call();
   if(idOfWord != 0) {
     console.log("[+] limerick already exists");
     const limerick = await LIMERICK.methods.limericks(idOfWord).call();
-    console.log(limerick.content);
+    console.log(warpContent(limerick.content));
     process.exit(0);
   }
   const limerick = await ethers.getContractAt("OAOLimerick", LIMERICK_ADDRESS);
@@ -768,7 +771,7 @@ async function getLimerick() {
   console.log("[+] get limerick");
   const currentId = await LIMERICK.methods.currentId().call();
   const limerick = await LIMERICK.methods.limericks(currentId).call();
-  console.log(limerick.content);
+  console.log(warpContent(limerick.content));
 }
 
 async function main() {
