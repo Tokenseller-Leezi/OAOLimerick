@@ -31,6 +31,47 @@ It danced in the light of the night,
 And brought joy to all who would please.
 ```
 
+## Examples
+1. Moon
+
+```
+There once was a night so serene,
+The stars shone bright, the sky was clean.
+A glowing orb in the distance,
+Cast shadows of wonder and distance,
+A sight to behold, pure and keen.
+```
+
+2. duck
+
+```
+There once was a bird with feathers so bright,
+Whose quacks were as loud as the morning light.
+It swam in the pond,
+With a wiggle and a bound,
+And chased after fish with delight.
+```
+
+3. Sun
+
+```
+There once was a glowing sphere of light,
+That brought warmth and joy to the sight.
+It rose each day with grace,
+And filled the world with its embrace,
+Bringing brightness to the morning light.
+```
+
+4. Milky Way
+
+```
+There once was a galaxy so bright,
+Whose stars shone with a lovely sight.
+It twinkled and glimmered,
+With a beauty so slimmer,
+And filled the night with pure delight.
+```
+
 ## Disclaimer
 
 _These smart contracts and testing suite are being provided as is. No guarantee, representation or warranty is being made, express or implied, as to the safety or correctness of anything provided herein or through related user interfaces. This repository and related code have not been audited and as such there can be no assurance anything will work as intended, and users may experience delays, failures, errors, omissions, loss of transmitted information or loss of funds. The creators are not liable for any of the foregoing. Users should proceed with caution and use at their own risk._
